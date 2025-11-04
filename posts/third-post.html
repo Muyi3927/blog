@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习笔记：JavaScript基础 - 我的博客</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>我的博客</h1>
+            <nav>
+                <a href="../index.html">首页</a>
+                <a href="#about">关于</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="post-content">
+            <a href="../index.html" class="back-link">← 返回首页</a>
+            
+            <div class="post-header">
+                <h1>学习笔记：JavaScript基础</h1>
+                <div class="post-meta">
+                    <span class="date">2025-11-02</span>
+                </div>
+            </div>
+
+            <article>
+                <p>JavaScript是Web开发中不可或缺的一部分。它让网页变得动态和交互。在这篇文章中，我将分享一些JavaScript的基础知识和学习心得。</p>
+
+                <h2>JavaScript的核心概念</h2>
+                <p>学习JavaScript时，需要掌握以下核心概念：</p>
+
+                <h3>1. 变量和数据类型</h3>
+                <p>JavaScript有多种数据类型，包括：</p>
+                <ul>
+                    <li><code>String</code> - 字符串</li>
+                    <li><code>Number</code> - 数字</li>
+                    <li><code>Boolean</code> - 布尔值</li>
+                    <li><code>Object</code> - 对象</li>
+                    <li><code>Array</code> - 数组</li>
+                    <li><code>null</code> 和 <code>undefined</code></li>
+                </ul>
+
+                <h3>2. 函数</h3>
+                <p>函数是JavaScript中的一等公民。我们可以使用多种方式定义函数：</p>
+                <pre><code>// 函数声明
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+// 箭头函数
+const greet = (name) => `Hello, ${name}!`;
+</code></pre>
+
+                <h3>3. 对象和数组</h3>
+                <p>对象和数组是JavaScript中用于组织数据的重要结构：</p>
+                <pre><code>// 对象
+const person = {
+    name: "张三",
+    age: 25,
+    city: "北京"
+};
+
+// 数组
+const fruits = ["苹果", "香蕉", "橙子"];
+</code></pre>
+
+                <h2>事件处理</h2>
+                <p>JavaScript可以响应用户的各种操作，如点击、输入、滚动等。事件处理是创建交互式网页的关键：</p>
+                <pre><code>// 添加点击事件监听器
+button.addEventListener('click', () => {
+    console.log('按钮被点击了！');
+});
+</code></pre>
+
+                <h2>DOM操作</h2>
+                <p>通过操作DOM（文档对象模型），我们可以动态地修改网页内容和样式：</p>
+                <ul>
+                    <li>选择元素：<code>querySelector()</code>、<code>getElementById()</code></li>
+                    <li>修改内容：<code>textContent</code>、<code>innerHTML</code></li>
+                    <li>修改样式：<code>style</code>、<code>classList</code></li>
+                    <li>创建和删除元素：<code>createElement()</code>、<code>remove()</code></li>
+                </ul>
+
+                <h2>异步编程</h2>
+                <p>JavaScript的异步特性让我们可以处理耗时操作而不阻塞主线程：</p>
+                <ul>
+                    <li>回调函数（Callbacks）</li>
+                    <li>Promise</li>
+                    <li>async/await</li>
+                </ul>
+
+                <h2>学习建议</h2>
+                <p>学习JavaScript时的一些建议：</p>
+                <ol>
+                    <li>多动手实践，编写代码</li>
+                    <li>阅读优秀的代码和文档</li>
+                    <li>理解底层原理，而不只是记住语法</li>
+                    <li>循序渐进，从基础到高级</li>
+                    <li>参与社区，与他人交流学习</li>
+                </ol>
+
+                <h2>总结</h2>
+                <p>JavaScript是一门强大而灵活的语言。掌握好基础知识，持续练习和学习，你就能够用JavaScript创建出色的Web应用。</p>
+
+                <p>希望这篇学习笔记对你有帮助。继续加油！</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 我的博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
