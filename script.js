@@ -15,11 +15,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // 添加页面加载动画
 window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    document.body.style.transition = 'opacity 0.3s';
-    setTimeout(() => {
-        document.body.style.opacity = '1';
-    }, 10);
+    document.body.classList.add('loaded');
 });
 
 // 控制台输出欢迎信息
